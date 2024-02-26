@@ -6,6 +6,7 @@ function Card(props) {
             <h6 className="ptitle">{props.prod.title}</h6>
             <h4 className="pprice">Price:Rs.{props.prod.price}</h4>
             <button className="pbtn" onClick={() => { props.cart(props.prod) }}>Add to Cart</button>
+            
         </div>
 }
 export default Card;

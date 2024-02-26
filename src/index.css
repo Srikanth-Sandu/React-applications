@@ -1,14 +1,22 @@
 .card{
-  border:2px solid red;
   width:200px;
   height:350px;
   border-radius: 10px;
   text-align: center;
-  background-image: linear-gradient(green,white);
+  background-color:lightgrey;
   margin: 20px;
 }
+.header{
+  margin:-8px;
+  color: rgb(93, 184, 226);
+  font-family: 'Courier New', Courier, monospace;
+  background-color:lightgray;
+  padding: 20px;
+  
+}
 .maindiv{
-  border:2px solid black;
+  margin: -8px;
+  background-color: antiquewhite;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -22,7 +30,7 @@
 .pbtn{
   width:80%;
   height:10%;
-  background-color:orange;
+  background-color:lightgreen;
   border-radius: 8%;
 }
 .ptitle{

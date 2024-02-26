@@ -1,7 +1,13 @@
 import React from "react";
 import Products from './products'
+import Header from "./header";
 function App() {
-  return <div className="maindiv"><Products/></div>
+  return <div >
+             <Header/>
+             <div className="maindiv">
+                <Products/>
+             </div>
+    </div>
   
 }
 
