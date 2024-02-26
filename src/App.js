@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { useFormik } from "formik";
+import Cusform from "./formikelement";
 function App() {
+
+  var userForm =useFormik({
+    initialValues:{'fn':'','ln':'','age':''},
+    onSubmit:(fv)=>{console.log(fv)}
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1>User Form using Formik</h1>
+      <form onSubmit={userForm.handleSubmit}>
+        <input type="text" placeholder="Firstname" name='fn' onChange={userForm.handleChange}  /><br/>
+        <input type="text" placeholder="Lasstname" name='ln' onChange={userForm.handleChange}  /><br/>
+        <input type="text" placeholder="Age" name='age' onChange={userForm.handleChange} /><br/>
+        <button type="submit">Save</button>
+      </form>
+      <Cusform/>   
+       </>
+    
+  )
 }
 
 export default App;
