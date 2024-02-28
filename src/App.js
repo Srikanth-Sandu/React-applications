@@ -1,10 +1,12 @@
-
+import React from "react";
+import Counter from "./counter";
+import Todolist from "./todolist";
 function App() {
   return (
-    <div>
-      <h1>counter:</h1>
-      
-    </div>
+    <>
+      <Counter/>
+      <Todolist/>
+      </>
   );
 }
 
